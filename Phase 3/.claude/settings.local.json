@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch --all --prune)",
+      "Bash(dir:*)",
+      "Bash(git rev-parse --abbrev-ref HEAD)",
+      "Bash(set PYTHONPATH=%PYTHONPATH%)",
+      "Bash(%CD%)",
+      "Bash(python -c \"import sys; print\\(sys.path\\)\")",
+      "Bash(python -c \"from src.routes import auth, tasks; print\\(''Import successful''\\)\")",
+      "Bash(python -m uvicorn src.main:app --reload --host 127.0.0.1 --port 8000)",
+      "Bash(powershell -Command \"Get-ChildItem -Path .. -Directory | Where-Object {$_.Name -match 'phase'}\":*)",
+      "Bash(python:*)",
+      "Bash(curl:*)",
+      "mcp__Neon__describe_table_schema",
+      "mcp__Neon__run_sql_transaction",
+      "Bash(find chatbot -name \"*.py\" -type f -exec grep -l \"tasks\\\\.id\\\\|users\\\\.id\\\\|tablename.*tasks\\\\|tablename.*users\" {} ;)",
+      "mcp__Neon__run_sql",
+      "mcp__Neon__describe_project",
+      "mcp__Neon__get_connection_string",
+      "Bash(npm run dev)",
+      "Bash(taskkill:*)",
+      "Bash(netstat -ano)",
+      "Bash(findstr:*)",
+      "Bash(findstr LISTENING)",
+      "Bash(call:*)",
+      "Bash(uvicorn:*)",
+      "Bash(cmd:*)",
+      "Bash(./venv/Scripts/python.exe:*)",
+      "Bash(./venv/Scripts/pip.exe install:*)",
+      "Bash(node -e:*)",
+      "Bash(wmic process where \"ProcessId=24268\" get ProcessId,CommandLine)",
+      "Bash(powershell:*)",
+      "Bash(test:*)",
+      "Bash(.specify/scripts/bash/create-phr.sh:*)",
+      "Bash(git remote:*)"
+    ]
+  }
+}
